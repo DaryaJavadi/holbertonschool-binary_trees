@@ -30,8 +30,8 @@ struct ListNode* createNode(int val)
 }
 
 
-// Non-recursive function to print the list in reverse
-void printReverseNonRecursive(struct ListNode* head) {
+void printReverseNonRecursive(struct ListNode* head)
+{
     int stack[100];
     int top = -1;
 
@@ -46,7 +46,8 @@ void printReverseNonRecursive(struct ListNode* head) {
 }
 
 
-void freeList(struct ListNode* head) {
+void freeList(struct ListNode* head)
+{
     while (head != NULL) {
         struct ListNode* temp = head;
         head = head->next;
@@ -55,7 +56,8 @@ void freeList(struct ListNode* head) {
 }
 
 
-int main() {
+int main()
+{
 
     struct ListNode* head = createNode(1);
     head->next = createNode(2);
@@ -70,5 +72,4 @@ int main() {
     printf("\n");
     freeList(head);
     return 0;
-}
 
