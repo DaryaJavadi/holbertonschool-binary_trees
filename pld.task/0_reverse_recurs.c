@@ -72,4 +72,4 @@ int main()
     printf("\n");
     freeList(head);
     return 0;
-
+}
